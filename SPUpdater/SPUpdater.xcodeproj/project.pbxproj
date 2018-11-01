@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45192865E619340FBC0805A6 /* libPods-SPUpdater.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 012F4F6120CF6059E80031C0 /* libPods-SPUpdater.a */; };
+		690B7E7B1FDA7B4C0042C283 /* SPUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 690B7E7A1FDA7B4C0042C283 /* SPUpdater.m */; };
+		690B7E7E1FDA990A0042C283 /* SPLogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 690B7E7D1FDA990A0042C283 /* SPLogHelper.m */; };
+		69391FFF1FE0FECA00F072CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69391FFE1FE0FECA00F072CD /* MainMenu.xib */; };
+		693920011FE0FEE100F072CD /* StatusMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693920001FE0FEE100F072CD /* StatusMenu.xib */; };
+		693920041FE109EF00F072CD /* SPUpdaterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 693920031FE109EF00F072CD /* SPUpdaterState.m */; };
+		693920071FE259B100F072CD /* NSData+SP.m in Sources */ = {isa = PBXBuildFile; fileRef = 693920061FE259B100F072CD /* NSData+SP.m */; };
+		69E0267F1FD67A1A00FB14A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E0267E1FD67A1A00FB14A3 /* AppDelegate.m */; };
+		69E026841FD67A1A00FB14A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E026831FD67A1A00FB14A3 /* Assets.xcassets */; };
+		69E0268A1FD67A1A00FB14A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026891FD67A1A00FB14A3 /* main.m */; };
+		69E026B61FD67E8500FB14A3 /* SPDotaEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026951FD67E8500FB14A3 /* SPDotaEvent.m */; };
+		69E026B71FD67E8500FB14A3 /* SPHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026971FD67E8500FB14A3 /* SPHero.m */; };
+		69E026B81FD67E8500FB14A3 /* SPHeroImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026991FD67E8500FB14A3 /* SPHeroImageDownloader.m */; };
+		69E026B91FD67E8500FB14A3 /* SPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E0269B1FD67E8500FB14A3 /* SPItem.m */; };
+		69E026BA1FD67E8500FB14A3 /* SPItemColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E0269D1FD67E8500FB14A3 /* SPItemColor.m */; };
+		69E026BB1FD67E8500FB14A3 /* SPItemGameData.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E0269F1FD67E8500FB14A3 /* SPItemGameData.m */; };
+		69E026BC1FD67E8500FB14A3 /* SPItemImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026A11FD67E8500FB14A3 /* SPItemImageDownloader.m */; };
+		69E026BD1FD67E8500FB14A3 /* SPItemPrefab.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026A31FD67E8500FB14A3 /* SPItemPrefab.m */; };
+		69E026BE1FD67E8500FB14A3 /* SPItemQuality.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026A51FD67E8500FB14A3 /* SPItemQuality.m */; };
+		69E026BF1FD67E8500FB14A3 /* SPItemRarity.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026A71FD67E8500FB14A3 /* SPItemRarity.m */; };
+		69E026C01FD67E8500FB14A3 /* SPItemSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026A91FD67E8500FB14A3 /* SPItemSets.m */; };
+		69E026C11FD67E8500FB14A3 /* SPItemSlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026AB1FD67E8500FB14A3 /* SPItemSlot.m */; };
+		69E026C21FD67E8500FB14A3 /* SPItemStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026AD1FD67E8500FB14A3 /* SPItemStyle.m */; };
+		69E026C31FD67E8500FB14A3 /* SPLocalMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026AF1FD67E8500FB14A3 /* SPLocalMapping.m */; };
+		69E026C41FD67E8500FB14A3 /* SPLootList.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026B11FD67E8500FB14A3 /* SPLootList.m */; };
+		69E026C51FD67E8500FB14A3 /* SPPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026B31FD67E8500FB14A3 /* SPPathManager.m */; };
+		69E026C61FD67E8500FB14A3 /* SPVDFResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026B51FD67E8500FB14A3 /* SPVDFResponseSerializer.m */; };
+		69E026D01FD67EE100FB14A3 /* KeyValueParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026C91FD67EE000FB14A3 /* KeyValueParser.m */; };
+		69E026D11FD67EE100FB14A3 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026CB1FD67EE000FB14A3 /* TreeNode.m */; };
+		69E026D21FD67EE100FB14A3 /* VDFNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026CD1FD67EE000FB14A3 /* VDFNode.m */; };
+		69E026D31FD67EE100FB14A3 /* VDFParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E026CF1FD67EE000FB14A3 /* VDFParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		012F4F6120CF6059E80031C0 /* libPods-SPUpdater.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SPUpdater.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2C634FE33F998C3B6AB11D /* Pods-SPUpdater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPUpdater.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPUpdater/Pods-SPUpdater.debug.xcconfig"; sourceTree = "<group>"; };
+		4AEB4A34450FFDAB79658412 /* Pods-SPUpdater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPUpdater.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPUpdater/Pods-SPUpdater.release.xcconfig"; sourceTree = "<group>"; };
+		690B7E791FDA7B4C0042C283 /* SPUpdater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPUpdater.h; sourceTree = "<group>"; };
+		690B7E7A1FDA7B4C0042C283 /* SPUpdater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPUpdater.m; sourceTree = "<group>"; };
+		690B7E7C1FDA990A0042C283 /* SPLogHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLogHelper.h; sourceTree = "<group>"; };
+		690B7E7D1FDA990A0042C283 /* SPLogHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPLogHelper.m; sourceTree = "<group>"; };
+		69391FFE1FE0FECA00F072CD /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		693920001FE0FEE100F072CD /* StatusMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusMenu.xib; sourceTree = "<group>"; };
+		693920021FE109EF00F072CD /* SPUpdaterState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPUpdaterState.h; sourceTree = "<group>"; };
+		693920031FE109EF00F072CD /* SPUpdaterState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPUpdaterState.m; sourceTree = "<group>"; };
+		693920051FE259B100F072CD /* NSData+SP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+SP.h"; sourceTree = "<group>"; };
+		693920061FE259B100F072CD /* NSData+SP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+SP.m"; sourceTree = "<group>"; };
+		69E0267A1FD67A1A00FB14A3 /* SPUpdater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPUpdater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E0267D1FD67A1A00FB14A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		69E0267E1FD67A1A00FB14A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		69E026831FD67A1A00FB14A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69E026881FD67A1A00FB14A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E026891FD67A1A00FB14A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69E0268B1FD67A1A00FB14A3 /* SPUpdater.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SPUpdater.entitlements; sourceTree = "<group>"; };
+		69E026941FD67E8500FB14A3 /* SPDotaEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDotaEvent.h; sourceTree = "<group>"; };
+		69E026951FD67E8500FB14A3 /* SPDotaEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDotaEvent.m; sourceTree = "<group>"; };
+		69E026961FD67E8500FB14A3 /* SPHero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHero.h; sourceTree = "<group>"; };
+		69E026971FD67E8500FB14A3 /* SPHero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHero.m; sourceTree = "<group>"; };
+		69E026981FD67E8500FB14A3 /* SPHeroImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHeroImageDownloader.h; sourceTree = "<group>"; };
+		69E026991FD67E8500FB14A3 /* SPHeroImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHeroImageDownloader.m; sourceTree = "<group>"; };
+		69E0269A1FD67E8500FB14A3 /* SPItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPItem.h; sourceTree = "<group>"; };
+		69E0269B1FD67E8500FB14A3 /* SPItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPItem.m; sourceTree = "<group>"; };
+		69E0269C1FD67E8500FB14A3 /* SPItemColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPItemColor.h; sourceTree = "<group>"; };
+		69E0269D1FD67E8500FB14A3 /* SPItemColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPItemColor.m; sourceTree = "<group>"; };
+		69E0269E1FD67E8500FB14A3 /* SPItemGameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPItemGameData.h; sourceTree = "<group>"; };
+		69E0269F1FD67E8500FB14A3 /* SPItemGameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPItemGameData.m; sourceTree = "<group>"; };
+		69E026A01FD67E8500FB14A3 /* SPItemImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPItemImageDownloader.h; sourceTree = "<group>"; };
+		69E026A11FD67E8500FB14A3 /* SPItemImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPItemImageDownloader.m; sourceTree = "<group>"; };
+		69E026A21FD67E8500FB14A3 /* SPItemPrefab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPItemPrefab.h; sourceTree = "<group>"; };
+		69E026A31FD67E8500FB14A3 /* SPItemPrefab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPItemPrefab.m; sourceTree = "<group>"; };
+		69E026A41FD67E8500FB14A3 /* SPItemQuality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPItemQuality.h; sourceTree = "<group>"; };
+		69E026A51FD67E8500FB14A3 /* SPItemQuality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPItemQuality.m; sourceTree = "<group>"; };
+		69E026A61FD67E8500FB14A3 /* SPItemRarity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPItemRarity.h; sourceTree = "<group>"; };
+		69E026A71FD67E8500FB14A3 /* SPItemRarity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPItemRarity.m; sourceTree = "<group>"; };
+		69E026A81FD67E8500FB14A3 /* SPItemSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPItemSets.h; sourceTree = "<group>"; };
+		69E026A91FD67E8500FB14A3 /* SPItemSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPItemSets.m; sourceTree = "<group>"; };
+		69E026AA1FD67E8500FB14A3 /* SPItemSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPItemSlot.h; sourceTree = "<group>"; };
+		69E026AB1FD67E8500FB14A3 /* SPItemSlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPItemSlot.m; sourceTree = "<group>"; };
+		69E026AC1FD67E8500FB14A3 /* SPItemStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPItemStyle.h; sourceTree = "<group>"; };
+		69E026AD1FD67E8500FB14A3 /* SPItemStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPItemStyle.m; sourceTree = "<group>"; };
+		69E026AE1FD67E8500FB14A3 /* SPLocalMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLocalMapping.h; sourceTree = "<group>"; };
+		69E026AF1FD67E8500FB14A3 /* SPLocalMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLocalMapping.m; sourceTree = "<group>"; };
+		69E026B01FD67E8500FB14A3 /* SPLootList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLootList.h; sourceTree = "<group>"; };
+		69E026B11FD67E8500FB14A3 /* SPLootList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLootList.m; sourceTree = "<group>"; };
+		69E026B21FD67E8500FB14A3 /* SPPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPathManager.h; sourceTree = "<group>"; };
+		69E026B31FD67E8500FB14A3 /* SPPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPathManager.m; sourceTree = "<group>"; };
+		69E026B41FD67E8500FB14A3 /* SPVDFResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVDFResponseSerializer.h; sourceTree = "<group>"; };
+		69E026B51FD67E8500FB14A3 /* SPVDFResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVDFResponseSerializer.m; sourceTree = "<group>"; };
+		69E026C81FD67EE000FB14A3 /* KeyValueParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValueParser.h; sourceTree = "<group>"; };
+		69E026C91FD67EE000FB14A3 /* KeyValueParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueParser.m; sourceTree = "<group>"; };
+		69E026CA1FD67EE000FB14A3 /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		69E026CB1FD67EE000FB14A3 /* TreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
+		69E026CC1FD67EE000FB14A3 /* VDFNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDFNode.h; sourceTree = "<group>"; };
+		69E026CD1FD67EE000FB14A3 /* VDFNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDFNode.m; sourceTree = "<group>"; };
+		69E026CE1FD67EE000FB14A3 /* VDFParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDFParser.h; sourceTree = "<group>"; };
+		69E026CF1FD67EE000FB14A3 /* VDFParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDFParser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69E026771FD67A1A00FB14A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45192865E619340FBC0805A6 /* libPods-SPUpdater.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DA378D71FE2B3BE00B70130 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				690B7E791FDA7B4C0042C283 /* SPUpdater.h */,
+				690B7E7A1FDA7B4C0042C283 /* SPUpdater.m */,
+				690B7E7C1FDA990A0042C283 /* SPLogHelper.h */,
+				690B7E7D1FDA990A0042C283 /* SPLogHelper.m */,
+				69E026B21FD67E8500FB14A3 /* SPPathManager.h */,
+				69E026B31FD67E8500FB14A3 /* SPPathManager.m */,
+				69E026A01FD67E8500FB14A3 /* SPItemImageDownloader.h */,
+				69E026A11FD67E8500FB14A3 /* SPItemImageDownloader.m */,
+				69E026981FD67E8500FB14A3 /* SPHeroImageDownloader.h */,
+				69E026991FD67E8500FB14A3 /* SPHeroImageDownloader.m */,
+				69E026B41FD67E8500FB14A3 /* SPVDFResponseSerializer.h */,
+				69E026B51FD67E8500FB14A3 /* SPVDFResponseSerializer.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		3A2CB5AF7408CA4507295211 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D2C634FE33F998C3B6AB11D /* Pods-SPUpdater.debug.xcconfig */,
+				4AEB4A34450FFDAB79658412 /* Pods-SPUpdater.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69E026711FD67A1A00FB14A3 = {
+			isa = PBXGroup;
+			children = (
+				69E0267C1FD67A1A00FB14A3 /* SPUpdater */,
+				69E0267B1FD67A1A00FB14A3 /* Products */,
+				3A2CB5AF7408CA4507295211 /* Pods */,
+				C00780614AC0772A33EFE848 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69E0267B1FD67A1A00FB14A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69E0267A1FD67A1A00FB14A3 /* SPUpdater.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69E0267C1FD67A1A00FB14A3 /* SPUpdater */ = {
+			isa = PBXGroup;
+			children = (
+				2DA378D71FE2B3BE00B70130 /* Tool */,
+				69E026D41FD681B600FB14A3 /* Model */,
+				69E026C71FD67EE000FB14A3 /* VDF */,
+				69E026931FD67E8500FB14A3 /* Data */,
+				69E0267D1FD67A1A00FB14A3 /* AppDelegate.h */,
+				69E0267E1FD67A1A00FB14A3 /* AppDelegate.m */,
+				69391FFE1FE0FECA00F072CD /* MainMenu.xib */,
+				693920001FE0FEE100F072CD /* StatusMenu.xib */,
+				69E026831FD67A1A00FB14A3 /* Assets.xcassets */,
+				69E026881FD67A1A00FB14A3 /* Info.plist */,
+				69E026891FD67A1A00FB14A3 /* main.m */,
+				69E0268B1FD67A1A00FB14A3 /* SPUpdater.entitlements */,
+			);
+			path = SPUpdater;
+			sourceTree = "<group>";
+		};
+		69E026931FD67E8500FB14A3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				693920021FE109EF00F072CD /* SPUpdaterState.h */,
+				693920031FE109EF00F072CD /* SPUpdaterState.m */,
+				69E026AE1FD67E8500FB14A3 /* SPLocalMapping.h */,
+				69E026AF1FD67E8500FB14A3 /* SPLocalMapping.m */,
+				69E0269E1FD67E8500FB14A3 /* SPItemGameData.h */,
+				69E0269F1FD67E8500FB14A3 /* SPItemGameData.m */,
+				693920051FE259B100F072CD /* NSData+SP.h */,
+				693920061FE259B100F072CD /* NSData+SP.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		69E026C71FD67EE000FB14A3 /* VDF */ = {
+			isa = PBXGroup;
+			children = (
+				69E026C81FD67EE000FB14A3 /* KeyValueParser.h */,
+				69E026C91FD67EE000FB14A3 /* KeyValueParser.m */,
+				69E026CA1FD67EE000FB14A3 /* TreeNode.h */,
+				69E026CB1FD67EE000FB14A3 /* TreeNode.m */,
+				69E026CC1FD67EE000FB14A3 /* VDFNode.h */,
+				69E026CD1FD67EE000FB14A3 /* VDFNode.m */,
+				69E026CE1FD67EE000FB14A3 /* VDFParser.h */,
+				69E026CF1FD67EE000FB14A3 /* VDFParser.m */,
+			);
+			path = VDF;
+			sourceTree = "<group>";
+		};
+		69E026D41FD681B600FB14A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69E026941FD67E8500FB14A3 /* SPDotaEvent.h */,
+				69E026951FD67E8500FB14A3 /* SPDotaEvent.m */,
+				69E026961FD67E8500FB14A3 /* SPHero.h */,
+				69E026971FD67E8500FB14A3 /* SPHero.m */,
+				69E0269A1FD67E8500FB14A3 /* SPItem.h */,
+				69E0269B1FD67E8500FB14A3 /* SPItem.m */,
+				69E0269C1FD67E8500FB14A3 /* SPItemColor.h */,
+				69E0269D1FD67E8500FB14A3 /* SPItemColor.m */,
+				69E026A21FD67E8500FB14A3 /* SPItemPrefab.h */,
+				69E026A31FD67E8500FB14A3 /* SPItemPrefab.m */,
+				69E026A41FD67E8500FB14A3 /* SPItemQuality.h */,
+				69E026A51FD67E8500FB14A3 /* SPItemQuality.m */,
+				69E026A61FD67E8500FB14A3 /* SPItemRarity.h */,
+				69E026A71FD67E8500FB14A3 /* SPItemRarity.m */,
+				69E026A81FD67E8500FB14A3 /* SPItemSets.h */,
+				69E026A91FD67E8500FB14A3 /* SPItemSets.m */,
+				69E026AA1FD67E8500FB14A3 /* SPItemSlot.h */,
+				69E026AB1FD67E8500FB14A3 /* SPItemSlot.m */,
+				69E026AC1FD67E8500FB14A3 /* SPItemStyle.h */,
+				69E026AD1FD67E8500FB14A3 /* SPItemStyle.m */,
+				69E026B01FD67E8500FB14A3 /* SPLootList.h */,
+				69E026B11FD67E8500FB14A3 /* SPLootList.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C00780614AC0772A33EFE848 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				012F4F6120CF6059E80031C0 /* libPods-SPUpdater.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69E026791FD67A1A00FB14A3 /* SPUpdater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69E0268E1FD67A1A00FB14A3 /* Build configuration list for PBXNativeTarget "SPUpdater" */;
+			buildPhases = (
+				991D25845FD17D295ABB61BA /* [CP] Check Pods Manifest.lock */,
+				69E026761FD67A1A00FB14A3 /* Sources */,
+				69E026771FD67A1A00FB14A3 /* Frameworks */,
+				69E026781FD67A1A00FB14A3 /* Resources */,
+				B0302D0E27D064EE105D47C6 /* [CP] Embed Pods Frameworks */,
+				76F200903991F0B3F61E0149 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPUpdater;
+			productName = SPUpdater;
+			productReference = 69E0267A1FD67A1A00FB14A3 /* SPUpdater.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69E026721FD67A1A00FB14A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = tiny;
+				TargetAttributes = {
+					69E026791FD67A1A00FB14A3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 69E026751FD67A1A00FB14A3 /* Build configuration list for PBXProject "SPUpdater" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69E026711FD67A1A00FB14A3;
+			productRefGroup = 69E0267B1FD67A1A00FB14A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69E026791FD67A1A00FB14A3 /* SPUpdater */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69E026781FD67A1A00FB14A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				693920011FE0FEE100F072CD /* StatusMenu.xib in Resources */,
+				69E026841FD67A1A00FB14A3 /* Assets.xcassets in Resources */,
+				69391FFF1FE0FECA00F072CD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76F200903991F0B3F61E0149 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SPUpdater/Pods-SPUpdater-resources.sh",
+				"${PODS_ROOT}/AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SPUpdater/Pods-SPUpdater-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		991D25845FD17D295ABB61BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SPUpdater-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0302D0E27D064EE105D47C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SPUpdater/Pods-SPUpdater-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69E026761FD67A1A00FB14A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E026C61FD67E8500FB14A3 /* SPVDFResponseSerializer.m in Sources */,
+				69E026BA1FD67E8500FB14A3 /* SPItemColor.m in Sources */,
+				69E026D31FD67EE100FB14A3 /* VDFParser.m in Sources */,
+				69E026B61FD67E8500FB14A3 /* SPDotaEvent.m in Sources */,
+				693920041FE109EF00F072CD /* SPUpdaterState.m in Sources */,
+				69E026B91FD67E8500FB14A3 /* SPItem.m in Sources */,
+				69E026D21FD67EE100FB14A3 /* VDFNode.m in Sources */,
+				69E026D11FD67EE100FB14A3 /* TreeNode.m in Sources */,
+				69E026C11FD67E8500FB14A3 /* SPItemSlot.m in Sources */,
+				69E026C01FD67E8500FB14A3 /* SPItemSets.m in Sources */,
+				69E026BC1FD67E8500FB14A3 /* SPItemImageDownloader.m in Sources */,
+				69E0268A1FD67A1A00FB14A3 /* main.m in Sources */,
+				690B7E7B1FDA7B4C0042C283 /* SPUpdater.m in Sources */,
+				69E026BD1FD67E8500FB14A3 /* SPItemPrefab.m in Sources */,
+				69E026B81FD67E8500FB14A3 /* SPHeroImageDownloader.m in Sources */,
+				69E026BB1FD67E8500FB14A3 /* SPItemGameData.m in Sources */,
+				69E026C31FD67E8500FB14A3 /* SPLocalMapping.m in Sources */,
+				69E026C21FD67E8500FB14A3 /* SPItemStyle.m in Sources */,
+				69E026BF1FD67E8500FB14A3 /* SPItemRarity.m in Sources */,
+				69E026C41FD67E8500FB14A3 /* SPLootList.m in Sources */,
+				69E026D01FD67EE100FB14A3 /* KeyValueParser.m in Sources */,
+				690B7E7E1FDA990A0042C283 /* SPLogHelper.m in Sources */,
+				693920071FE259B100F072CD /* NSData+SP.m in Sources */,
+				69E026BE1FD67E8500FB14A3 /* SPItemQuality.m in Sources */,
+				69E026B71FD67E8500FB14A3 /* SPHero.m in Sources */,
+				69E026C51FD67E8500FB14A3 /* SPPathManager.m in Sources */,
+				69E0267F1FD67A1A00FB14A3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		69E0268C1FD67A1A00FB14A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		69E0268D1FD67A1A00FB14A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		69E0268F1FD67A1A00FB14A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D2C634FE33F998C3B6AB11D /* Pods-SPUpdater.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SPUpdater/SPUpdater.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8QP3ZT6EXM;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"TMPFILEPATH=${SRCROOT}/Files",
+				);
+				INFOPLIST_FILE = SPUpdater/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiny.SPUpdater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		69E026901FD67A1A00FB14A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AEB4A34450FFDAB79658412 /* Pods-SPUpdater.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SPUpdater/SPUpdater.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8QP3ZT6EXM;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"TMPFILEPATH=@\"${SRCROOT}/Files\"",
+				);
+				INFOPLIST_FILE = SPUpdater/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiny.SPUpdater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69E026751FD67A1A00FB14A3 /* Build configuration list for PBXProject "SPUpdater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E0268C1FD67A1A00FB14A3 /* Debug */,
+				69E0268D1FD67A1A00FB14A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69E0268E1FD67A1A00FB14A3 /* Build configuration list for PBXNativeTarget "SPUpdater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E0268F1FD67A1A00FB14A3 /* Debug */,
+				69E026901FD67A1A00FB14A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69E026721FD67A1A00FB14A3 /* Project object */;
+}

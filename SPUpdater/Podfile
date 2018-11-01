@@ -1,0 +1,10 @@
+target 'SPUpdater' do
+
+pod 'SDWebImage', '~> 4.0'
+pod 'FMDB'
+pod 'YYModel'
+pod 'SSZipArchive', '~> 1.8.1'
+pod 'AVOSCloud'
+pod 'AFNetworking'
+
+end

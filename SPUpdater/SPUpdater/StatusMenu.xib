@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="7GR-hq-H6d" id="enS-TU-79A"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="7GR-hq-H6d" customClass="AppDelegate">
+            <connections>
+                <outlet property="adServiceItem" destination="ZSv-31-KQ6" id="btL-4G-R8b"/>
+                <outlet property="basedataItem" destination="xrP-Hx-LT7" id="70h-N1-JMZ"/>
+                <outlet property="checkDelayTimeItem" destination="Nip-tP-VsL" id="NSo-uo-Xyh"/>
+                <outlet property="checkUpdateItem" destination="gsc-1s-dS5" id="xLz-h8-0Pi"/>
+                <outlet property="curLogItem" destination="gwl-Yz-hFu" id="M8Y-d0-wgl"/>
+                <outlet property="langItem" destination="12T-0J-aoh" id="ceh-aJ-jPq"/>
+                <outlet property="langpatchItem" destination="O5W-cz-lKP" id="lfU-w4-BV3"/>
+                <outlet property="lastCheckTimeItem" destination="fPH-YF-v9b" id="ACk-vU-MaC"/>
+                <outlet property="lastUpdateTimeItem" destination="eJq-Tc-LkE" id="YIL-q7-iHP"/>
+                <outlet property="logItem" destination="Ir7-lH-CdI" id="W7f-jV-vFu"/>
+                <outlet property="nextCheckTimeItem" destination="j0H-iI-bOL" id="cTg-iI-ZW0"/>
+                <outlet property="oldServiceItem" destination="Ihz-hE-e9g" id="j37-ET-TXJ"/>
+                <outlet property="proServiceItem" destination="1w8-m0-4bD" id="Np3-jG-gNs"/>
+                <outlet property="quititem" destination="m7B-5s-gJt" id="X3a-lm-xke"/>
+                <outlet property="statusMenu" destination="qzm-G8-5Ba" id="0Qr-lG-ogi"/>
+                <outlet property="updateItem" destination="TkX-un-6gh" id="cn5-tJ-p4L"/>
+            </connections>
+        </customObject>
+        <menu title="SPUpdater" id="qzm-G8-5Ba">
+            <items>
+                <menuItem title="BaseData: 0" enabled="NO" id="xrP-Hx-LT7">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Lang: 0" enabled="NO" id="12T-0J-aoh">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="LangPatch: 0" enabled="NO" id="O5W-cz-lKP">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Tjv-gd-QW1"/>
+                <menuItem title="距离下次检查：00小时00分" enabled="NO" id="Nip-tP-VsL">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="最近检查日期：yyyy/MM/dd" enabled="NO" id="fPH-YF-v9b">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="下次检查日期：yyyy/MM/dd" enabled="NO" id="j0H-iI-bOL">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="最近更新日期：yyyy/MM/dd" enabled="NO" id="eJq-Tc-LkE">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="5at-J1-hTk"/>
+                <menuItem title="检查更新..." id="gsc-1s-dS5">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="checkUpdateAction:" target="7GR-hq-H6d" id="NsW-LS-EUP"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="立即更新..." id="TkX-un-6gh">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="updateAction:" target="7GR-hq-H6d" id="4bO-Gq-SJA"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="u0v-Gp-EcQ"/>
+                <menuItem title="Old Service" id="Ihz-hE-e9g">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="oldServiceAction:" target="7GR-hq-H6d" id="r6y-h8-m9y"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Ad Service" id="ZSv-31-KQ6">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="adServiceAcTION:" target="7GR-hq-H6d" id="5Zr-qr-Ho0"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Pro Service" id="1w8-m0-4bD">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="proServiceAction:" target="7GR-hq-H6d" id="tcX-32-MhF"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="8kD-4a-TKJ"/>
+                <menuItem title="日志文件..." id="Ir7-lH-CdI">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openLogFile:" target="7GR-hq-H6d" id="kyd-hd-Mzm"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="实时日志..." id="gwl-Yz-hFu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showCurLog:" target="7GR-hq-H6d" id="Fye-ZV-oT7"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="IHK-BW-c8I"/>
+                <menuItem title="退出" id="m7B-5s-gJt">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="terminate:" target="-2" id="6SM-sa-Jit"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
